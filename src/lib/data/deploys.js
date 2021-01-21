@@ -30,6 +30,16 @@ const assets = [
     address: "0x68A118Ef45063051Eac49c7e647CE5Ace48a68a5",
   },
   {
+    name: "BSG",
+    decimals: 18,
+    address: "0xB34Ab2f65c6e4F764fFe740ab83F982021Faed6d",
+  },
+  {
+    name: "BSGS",
+    decimals: 18,
+    address: "0xA9d232cC381715aE791417B624D7C4509D2c28DB",
+  },
+  {
     name: "BUSD",
     decimals: 18,
     address: "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
@@ -50,11 +60,6 @@ const assets = [
     address: "0xD533a949740bb3306d119CC777fa900bA034cd52",
   },
   {
-    name: "CRV-YPOOL",
-    decimals: 18,
-    address: "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
-  },
-  {
     name: "CRV-BUSD",
     decimals: 18,
     address: "0x3B3Ac5386837Dc563660FB6a0937DFAa5924333B",
@@ -65,14 +70,34 @@ const assets = [
     address: "0x845838DF265Dcd2c412A1Dc9e959c7d08537f8a2",
   },
   {
+    name: "CRV-EURS",
+    decimals: 18,
+    address: "0x194eBd173F6cDacE046C53eACcE9B953F28411d1",
+  },
+  {
     name: "CRV-OBTC",
     decimals: 18,
     address: "0x2fE94ea3d5d4a175184081439753DE15AeF9d614",
   },
   {
+    name: "CRV-STETH",
+    decimals: 18,
+    address: "0x06325440D014e39736583c165C2963BA99fAf14E",
+  },
+  {
     name: "CRV-USDN",
     decimals: 18,
     address: "0x4f3E8F405CF5aFC05D68142F3783bDfE13811522",
+  },
+  {
+    name: "CRV-UST",
+    decimals: 18,
+    address: "0x94e131324b6054c0D789b190b2dAC504e4361b53",
+  },
+  {
+    name: "CRV-YPOOL",
+    decimals: 18,
+    address: "0xdF5e0e81Dff6FAF3A7e52BA697820c5e32D806A8",
   },
   {
     name: "DAI",
@@ -83,6 +108,16 @@ const assets = [
     name: "DPI",
     decimals: 18,
     address: "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
+  },
+  {
+    name: "DSD",
+    decimals: 18,
+    address: "0xBD2F0Cd039E0BFcf88901C98c0bFAc5ab27566e3",
+  },
+  {
+    name: "ESD",
+    decimals: 18,
+    address: "0x36F3FD68E7325a35EB768F1AedaAe9EA0689d723",
   },
   {
     name: "FARM",
@@ -178,6 +213,11 @@ const assets = [
     name: "USDT",
     decimals: 6,
     address: "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+  },
+  {
+    name: "UST",
+    decimals: 18,
+    address: "0xa47c8bf37f92aBed4A126BDA807A7b7498661acD",
   },
   {
     name: "WBTC",
@@ -465,23 +505,63 @@ const assets = [
   },
   {
     name: "1INCH_ETH-DAI_LP",
+    //type: "uniswap", // disable until ETH is handled properly
     decimals: 18,
     address: "0x7566126f2fD0f2Dddae01Bb8A6EA49b760383D5A",
   },
   {
     name: "1INCH_ETH-WBTC_LP",
+    //type: "uniswap", // disable until ETH is handled properly
     decimals: 18,
     address: "0x6a11F3E5a01D129e566d783A7b6E8862bFD66CcA",
   },
   {
     name: "1INCH_ETH-USDT_LP",
+    //type: "uniswap", // disable until ETH is handled properly
     decimals: 18,
     address: "0xbBa17b81aB4193455Be10741512d0E71520F43cB",
   },
   {
     name: "1INCH_ETH-USDC_LP",
+    //type: "uniswap", // disable until ETH is handled properly
     decimals: 18,
     address: "0xb4dB55a20E0624eDD82A0Cf356e3488B4669BD27",
+  },
+  {
+    name: "UNI_DAI-BSGS_LP",
+    //type: "uniswap", // disable until it's in Coingecko
+    decimals: 18,
+    address: "0x980a07E4F64d21a0cB2eF8D4AF362a79b9f5c0DA",
+  },
+  {
+    name: "UNI_DAI-BSG_LP",
+    //type: "uniswap", // disable until it's in Coingecko
+    decimals: 18,
+    address: "0x4A9596E5d2f9bEF50E4De092AD7181aE3C40353e",
+  },
+  {
+    name: "UNI_MTSLA-UST_LP",
+    //type: "uniswap", // disable until it's in Coingecko
+    decimals: 18,
+    address: "0x5233349957586A8207c52693A959483F9aeAA50C",
+  },
+  {
+    name: "UNI_MGOOGL-UST_LP",
+    //type: "uniswap", // disable until it's in Coingecko
+    decimals: 18,
+    address: "0x4b70ccD1Cf9905BE1FaEd025EADbD3Ab124efe9a",
+  },
+  {
+    name: "UNI_MAMZN-UST_LP",
+    //type: "uniswap", // disable until it's in Coingecko
+    decimals: 18,
+    address: "0x0Ae8cB1f57e3b1b7f4f5048743710084AA69E796",
+  },
+  {
+    name: "UNI_UST-MAAPL_LP",
+    //type: "uniswap", // disable until it's in Coingecko
+    decimals: 18,
+    address: "0xB022e08aDc8bA2dE6bA4fECb59C6D502f66e953B",
   },
 ];
 
@@ -943,6 +1023,90 @@ assets.push({
   underlyingAsset: assetByName("1INCH_ETH-USDC_LP"),
   decimals: 18,
   address: "0xD162395C21357b126C5aFED6921BC8b13e48D690",
+});
+assets.push({
+  name: "fCRV-EURS",
+  type: "ftoken",
+  underlyingAsset: assetByName("CRV-EURS"),
+  decimals: 18,
+  address: "0x6eb941BD065b8a5bd699C5405A928c1f561e2e5a",
+});
+assets.push({
+  name: "fCRV-UST",
+  type: "ftoken",
+  underlyingAsset: assetByName("CRV-UST"),
+  decimals: 18,
+  address: "0x84A1DfAdd698886A614fD70407936816183C0A02",
+});
+assets.push({
+  name: "fUNI-DAI:BSGS",
+  type: "ftoken",
+  underlyingAsset: assetByName("UNI_DAI-BSGS_LP"),
+  decimals: 18,
+  address: "0x633C4861A4E9522353EDa0bb652878B079fb75Fd",
+});
+assets.push({
+  name: "fUNI-DAI:BSG",
+  type: "ftoken",
+  underlyingAsset: assetByName("UNI_DAI-BSG_LP"),
+  decimals: 18,
+  address: "0x639d4f3F41daA5f4B94d63C2A5f3e18139ba9E54",
+});
+assets.push({
+  name: "fDSD",
+  type: "ftoken",
+  underlyingAsset: assetByName("DSD"),
+  decimals: 18,
+  address: "0x8Bf3c1c7B1961764Ecb19b4FC4491150ceB1ABB1",
+});
+assets.push({
+  name: "fESD",
+  type: "ftoken",
+  underlyingAsset: assetByName("ESD"),
+  decimals: 18,
+  address: "0x45a9e027DdD8486faD6fca647Bb132AD03303EC2",
+});
+assets.push({
+  name: "fBAC",
+  type: "ftoken",
+  underlyingAsset: assetByName("BAC"),
+  decimals: 18,
+  address: "0x371E78676cd8547ef969f89D2ee8fA689C50F86B",
+});
+assets.push({
+  name: "fCRV-stETH",
+  type: "ftoken",
+  underlyingAsset: assetByName("CRV-STETH"),
+  decimals: 18,
+  address: "0xc27bfE32E0a934a12681C1b35acf0DBA0e7460Ba",
+});
+assets.push({
+  name: "fUNI-mTSLA:UST",
+  type: "ftoken",
+  underlyingAsset: assetByName("UNI_MTSLA-UST_LP"),
+  decimals: 18,
+  address: "0xC800982d906671637E23E031e907d2e3487291Bc",
+});
+assets.push({
+  name: "fUNI-mGOOGL:UST",
+  type: "ftoken",
+  underlyingAsset: assetByName("UNI_MGOOGL-UST_LP"),
+  decimals: 18,
+  address: "0x07DBe6aA35EF70DaD124f4e2b748fFA6C9E1963a",
+});
+assets.push({
+  name: "fUNI-mAMZN:UST",
+  type: "ftoken",
+  underlyingAsset: assetByName("UNI_MAMZN-UST_LP"),
+  decimals: 18,
+  address: "0x8334A61012A779169725FcC43ADcff1F581350B7",
+});
+assets.push({
+  name: "fUNI-UST:mAAPL",
+  type: "ftoken",
+  underlyingAsset: assetByName("UNI_UST-MAAPL_LP"),
+  decimals: 18,
+  address: "0x11804D69AcaC6Ae9466798325fA7DE023f63Ab53",
 });
 
 // name overrides asset.name for display
@@ -2701,6 +2865,90 @@ const weekTwentyOnePools = [
   {
     asset: assetByName("fCRV-OBTC"),
     address: "0x91B5cD52fDE8dbAC37C95ECafEF0a70bA4c182fC",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fUNI-DAI:BSGS"),
+    address: "0x63e7D3F6e208ccE4967b7a0E6A50A397Af0b0E7A",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fUNI-DAI:BSG"),
+    address: "0xf5b221E1d9C3a094Fb6847bC3E241152772BbbF8",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fDSD"),
+    address: "0x7c497298d9576499e17F9564CE4E13faa87A9b33",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fESD"),
+    address: "0xDB9C2EbA87301e6951d6FBE7a458832eaab2137E",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fBAC"),
+    address: "0x3cddE34C96eCB95A1232c9673e23f2dB5fA72280",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fCRV-EURS"),
+    address: "0xf4d50f60D53a230abc8268c6697972CB255Cd940",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fCRV-UST"),
+    address: "0xDdb5D3CCd968Df64Ce48b577776BdC29ebD3120e",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fCRV-stETH"),
+    address: "0x2E25800957742C52b4d69b65F9C67aBc5ccbffe6",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fUNI-mTSLA:UST"),
+    address: "0x40C34B0E1bb6984810E17474c6B0Bcc6A6B46614",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fUNI-mGOOGL:UST"),
+    address: "0xfE83a00DF3A98dE218c08719FAF7e3741b220D0D",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fUNI-mAMZN:UST"),
+    address: "0x8Dc427Cbcc75cAe58dD4f386979Eba6662f5C158",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    asset: assetByName("fUNI-UST:mAAPL"),
+    address: "0xc02d1Da469d68Adc651Dd135d1A7f6b42F4d1A57",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    name: "f1INCH-ETH:DAI",
+    asset: assetByName("f1INCH_ETH-DAI_LP"),
+    address: "0xDa5E9706274D88bbf1bD1877a9b462fC40cDcfAd",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    name: "f1INCH-ETH:WBTC",
+    asset: assetByName("f1INCH_ETH-WBTC_LP"),
+    address: "0x747318Cf3171D4E2a1A52bBD3Fcc9f9c690448B4",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    name: "f1INCH-ETH:USDT",
+    asset: assetByName("f1INCH_ETH-USDT_LP"),
+    address: "0x2A80e0B572e7EF61Ef81EF05eC024e1e52Bd70BD",
+    rewardAsset: assetByName("FARM"),
+  },
+  {
+    name: "f1INCH-ETH:USDC",
+    asset: assetByName("f1INCH_ETH-USDC_LP"),
+    address: "0x9a9A6148f7b0A9767AC1fdC67343D1e3E219FdDf",
     rewardAsset: assetByName("FARM"),
   },
 ];
