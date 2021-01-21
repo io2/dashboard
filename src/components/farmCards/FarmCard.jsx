@@ -13,6 +13,11 @@ export default function FarmCard({ summary_information }) {
     return pool.address === summary_information.address;
   });
 
+  function formatBalance(balance) {
+    var bal = parseFloat(balance);
+    return bal == 0 ? bal : (bal.toFixed(6) == 0 ? bal.toExponential(4) : bal.toFixed(6));
+  };
+
   const stake = async () => {
     const doStake = async (stakeAmount) => {
       await pool
@@ -129,7 +134,7 @@ export default function FarmCard({ summary_information }) {
         </div>
         <div className="card_property_section farm_staked">
           <label className="card_property_title">Staked</label>
-          <p className="card_property_value">{parseFloat(summary_information.stakedBalance).toFixed(6)}</p>
+          <p className="card_property_value">{formatBalance(summary_information.stakedBalance)}</p>
         </div>
         <div className="card_property_section farm_claimable">
           <label className="card_property_title">Claimable</label>
@@ -137,7 +142,7 @@ export default function FarmCard({ summary_information }) {
         </div>
         <div className="card_property_section farm_unstaked">
           <label className="card_property_title">Unstaked</label>
-          <p className="card_property_value">{parseFloat(summary_information.unstakedBalance).toFixed(6)}</p>
+          <p className="card_property_value">{formatBalance(summary_information.unstakedBalance)}</p>
         </div>
         <div className="card_property_section farm_pool_percentage">
           <label className="card_property_title">% of Pool</label>
@@ -150,7 +155,7 @@ export default function FarmCard({ summary_information }) {
 
       </div>
       <UnderlyingBalanceContainer>
-        <label className="underlying_balance_label">Underlying Balance:</label> <span className="underlying_balance_value">{summary_information.name === "FARM Profit Sharing" ? "N/A" : parseFloat(summary_information.underlyingBalance).toFixed(6)}</span>
+        <label className="underlying_balance_label">Underlying Balance:</label> <span className="underlying_balance_value">{summary_information.name === "FARM Profit Sharing" ? "N/A" : formatBalance(summary_information.underlyingBalance)}</span>
       </UnderlyingBalanceContainer>
       {summary_information.name !== "FARM Profit Sharing" &&
         <div className="card_input_area">
